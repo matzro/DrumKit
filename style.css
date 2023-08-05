@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'College';
-    src: url('fonts/CollegeBlock-Mzxn.ttf');
+    font-family: 'MetalVengeance';
+    src: url('fonts/MetalVengeance-0WqV9.ttf');
 }
 
 body{
-    background-color: #FFE17B;
+    background-color: #222121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +20,16 @@ body{
 }
 
 h1{
-    color: #FD8D14;
+    color: #db2a2a;
     font-size: 8rem;
     margin-bottom: 30px;
+    font-family: 'MetalVengeance';
 }
 
 p{
-    color: #949450;
+    color: #bababa;
     font-size: 2rem;
     margin-top: 50px;
     font-weight: bold;
+    font-family: cursive;
 }
