@@ -39,7 +39,6 @@ detectKey();
 
 function drum(instrument) {
 
-
     console.log(detectKey());
 
     switch (instrument) {
