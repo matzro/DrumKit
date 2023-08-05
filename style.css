@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'College';
+    src: url('fonts/CollegeBlock-Mzxn.ttf');
+}
+
+body{
+    background-color: #FFE17B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#drums{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    text-align: center;
+    align-items: end;
+}
+
+h1{
+    color: #FD8D14;
+    font-size: 8rem;
+    margin-bottom: 30px;
+}
+
+p{
+    color: #949450;
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight: bold;
+}
