@@ -34,3 +34,7 @@ p{
     font-weight: bold;
     font-family: cursive;
 }
+
+.pressed{
+    opacity: 0.5;
+}

@@ -9,6 +9,7 @@ var tom4 = new Audio("./sounds/tom-4.mp3");
 function detectKey() {
     document.addEventListener("keydown", function (event) {
         keyPressed = event.key;
+        buttonAnimation(keyPressed);
         switch (keyPressed) {
             case "w":
                 crash.play();
@@ -38,32 +39,36 @@ function detectKey() {
 detectKey();
 
 function drum(instrument) {
-
-    console.log(detectKey());
-
+    buttonAnimation(instrument);
     switch (instrument) {
-        case "crash":
+        case "w":
             crash.play();
             break;
-        case "kick":
+        case "a":
             kick.play();
             break;
-        case "snare":
+        case "s":
             snare.play();
             break;
-        case "tom1":
+        case "d":
             tom1.play();
             break;
-        case "tom2":
+        case "j":
             tom2.play();
             break;
-        case "tom3":
+        case "k":
             tom3.play();
             break;
-        case "tom4":
+        case "l":
             tom4.play();
             break;
     }
 }
 
-
+function buttonAnimation(currentKey){
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    }, 100);
+}
